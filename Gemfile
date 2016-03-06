@@ -33,9 +33,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#NUEVAS GEMAS
+
 # solucion error de ExecJS::ProgramError in Welcome#index
 gem 'coffee-script-source', '1.8.0'
 
+# Autenticacion DEVISE para rails 4
+gem 'devise', '~> 3.4.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
