@@ -1,3 +1,188 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+/*# reglas Ecos */
+
+.imagen_boton img {
+   position: relative;
+   width: auto;
+   height: 50px;
+   left: 0px; 
+   top: 0px;
+  }
+
+  /*# recuadro Ucc */
+.col-md-e {
+    float:left;
+    width: auto;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    
+  }
+
+
+ /*# recuadro flora */
+.col-md-i {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #0FB2BC;
+
+  }
+
+  /*# recuadro flora */
+.col-md-h {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #B2C740;
+
+  }
+
+  /*# recuadro energia */
+  .col-md-b {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #F4E830;
+    
+  /*# recuadro agua */
+  }
+  .col-md-a {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #50B3E5;
+  }
+
+  /*# recuadro reciclaje */
+  .col-md-r {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #E68638;
+    
+  }
+  .col-md-o {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #8F994E;
+    
+  }
+
+.col-md-s {
+    float:right;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #D61F26;
+    
+  }
+  
+  .col-md-c {
+    float:right;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    background-color: #0FB2BC;
+    
+  }
+
+
+  .col-md-u {
+    float:right;
+    width: auto;
+    height: 50px;
+    border: 0px solid #FFFFFF;
+    margin: 8px;
+    padding: -10px;
+    text-align: right;
+    color: #FFFFFF;
+    
+  }
+  
+
+
+/* COLORES E IMAGENES INSTITUCIONALES DEL CLIENTE*/
+   .col-md-i:hover,
+   .col-md-h:hover,
+   .col-md-b:hover,
+   .col-md-a:hover,
+   .col-md-r:hover,
+   .col-md-o:hover,
+   .col-md-c:hover{
+   color: #17819C;
+  background-color: #17819C;
+  border-color: #17819C;
+  border-bottom-width: 2px;
+  border-bottom-style: Solid;
+  border-bottom-color: #FFFFFF;
+  }
+
+  .col-md-s:hover {
+   color: #D61F26;
+  background-color: #D61F26;
+  border-color: #D61F26;
+  border-bottom-width: 2px;
+  border-bottom-style: Solid;
+  border-bottom-color: #FFFFFF;
+  }
+  .col-md-o:focus {
+   color: #17819C;
+  background-color: #17819C;
+  border-color: #FFFFFF;
+  }
+
+  /*barra menu*/
+.navbar-ecos {
+  background-color: #09343F;
+  border-color: #09343F;
+}
+
+
+  .barra-menu{
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 66px;
+    width: auto; 
+    max-height: 500px;
+    border: 0px solid #FFFFFF;
+
+
+  }
+
+
+.row-e:before,
+.row-e:after
+  {
+  display: table;
+  content: " ";
+}
