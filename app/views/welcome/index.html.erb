@@ -1,4 +1,7 @@
+<% if user_signed_in? %>
+
 <div class="navbar navbar-ecos navbar-fixed-top" role="navigation">
+
 
 			<div class="container-fluid">
 				<div class="barra-menu">
@@ -26,20 +29,37 @@
     					<div class="col-md-o">
     						<a href="#"><div class="imagen_boton"><%= image_tag "o.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
     					</div><!--col-md-o-->
+               
+              <!--Inicia Boton salir-->
+
                <div class="col-md-s">
-                <a href="#"><div class="imagen_boton"><%= image_tag "s.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
+                <div class="imagen_boton">
+
+                  <%= link_to image_tag( "s.png", :alt => "e", :title => "e" ) %>
+                  <%= link_to "salir", destroy_user_session_path, method: :delete %>
+                  </div><!--imagen_boton-->
               </div><!--col-md-s-->
+              
+              <!-- Termina Boton salir-->
+              
               <div class="col-md-c">
-                <a href="#"><div class="imagen_boton"><%= image_tag "c.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
+                <a href="#" ><div class="imagen_boton"><%= image_tag "c.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
               </div><!--col-md-c-->
+
+
               <div class="col-md-u">
-                Néstor Ramírez Amaya</br>
+                <%= current_user.email %></br>
                 Rol: Invitado</br>
                 Sede: Medellín</br>
               </div><!--col-md-c-->
 
-    				 
+                 <!-- <% if user_signed_in? %>
+                 <strong><%= current_user.email %></strong>.
+                 <%= link_to "logout", destroy_user_session_path, method: :delete, :class=> 'navbar-link' %>
+                  <% end %>-->
+    
+
 				</div><!--barra-menu-->
 			</div>
 	</div><!--navbar navbar-default navbar-fixed-top-->
-<p> Nestor </p>
+<% end %>
