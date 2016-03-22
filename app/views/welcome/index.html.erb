@@ -5,59 +5,153 @@
 
 			<div class="container-fluid">
 				<div class="barra-menu">
- 					
-    					<div class="col-md-e">
-       					<div class="imagen_boton"><%= image_tag "ucc.png", :alt => "Ecos", :title => "Ecos"%></div><!--imagen_boton-->
-    					</div><!--col-md-e-->
-              <div class="col-md-i">
-                <a href="#"><div class="imagen_boton"><%= image_tag "i.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
-                  <kbd>40</kbd>
-              </div><!--col-md-i-->
-    					<div class="col-md-h">
-    						<a href="#"><div class="imagen_boton"><%= image_tag "h.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
-							     <kbd>6</kbd>
-    					  </div><!--col-md-h-->
-    					<div class="col-md-b">
-                <a href="#"><div class="imagen_boton"><%= image_tag "b.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
-    					</div><!--col-md-b-->
-    					<div class="col-md-a">
-    						<a href="#"><div class="imagen_boton"><%= image_tag "a.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
-    					</div><!--col-md-a-->
-    					<div class="col-md-r">
-    						<a href="#"><div class="imagen_boton"><%= image_tag "r.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
-    					</div><!--col-md-r-->
-    					<div class="col-md-o">
-    						<a href="#"><div class="imagen_boton"><%= image_tag "o.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
-    					</div><!--col-md-o-->
-               
-              <!--Inicia Boton salir-->
 
-               <div class="col-md-s">
+
+
+          <div class="row">
+          <div class="col-xs-20 col-md-12">
+
+
+
+
+ 					  <!--Inicia Logo-->
+    				<div class="col-xs-e">
+       			<div class="imagen_boton"><%= image_tag "ucc.png", :alt => "Ecos", :title => "Ecos"%></div>
+            <!--imagen_boton-->
+    				</div><!--col-md-e-->
+            <!--Finaliza Logo-->
+
+
+
+
+               <!--Inicia decoracion-->
+              <div class="col-xs-deco">
+                <div class="imagen_boton"><%= image_tag "deco_menu.png" %>
+                </div><!--imagen-->
+              </div><!--decoracion-->
+
+
+              <!--inicia boton institucional-->
+              <div class="col-xs-i">
+                <a href="#"><div class="imagen_boton"><%= image_tag "i.png", :alt => "Institucional", :title => "Institucional"%></div></a><!--imagen_boton-->
+              </div><!--col-md-i-->
+              <!--termina boton institucional-->
+    					
+
+              <!--inicia boton zonas verdes-->
+              <div class="col-xs-h">
+    						<a href="#"><div class="imagen_boton"><%= image_tag "h.png", :alt => "Zonas Verdes", :title => "Zonas verdes"%></div></a><!--imagen_boton-->
+							</div><!--col-md-h-->
+    					<!--termina boton zonas verdes-->
+
+              <!--inicia boton energia-->
+              <div class="col-xs-b">
+                <a href="#"><div class="imagen_boton"><%= image_tag "b.png", :alt => "Energía", :title => "Energía"%></div></a><!--imagen_boton-->
+    					</div><!--col-md-b-->
+    					<!--tremina boton energia-->
+
+              <!--inicia boton Agua-->
+              <div class="col-xs-a">
+    						<a href="#"><div class="imagen_boton"><%= image_tag "a.png", :alt => "Agua", :title => "Agua"%></div></a><!--imagen_boton-->
+    					</div>
+              <!--Termina boton Agua-->
+
+
+              <!--inicia boton reciclaje-->
+    					<div class="col-xs-r">
+    						<a href="#"><div class="imagen_boton"><%= image_tag "r.png", :alt => "Reciclaje", :title => "Reciclaje"%></div></a><!--imagen_boton-->
+                </div>
+              <!--termina boton reciclaje-->
+
+
+              <!--Inicia Boton compras-->
+              <div class="col-xs-co">
+                <a href="#"><div class="imagen_boton"><%= image_tag "compras.png", :alt => "compras verdes", :title => "compras verdes"%></div></a><!--imagen_boton-->
+              </div><!--col-md-o-->
+              <!-- Termina Boton compras-->
+
+              
+
+            
+    				
+    					
+              <!--Inicia Boton Otras actividades Ambientales-->
+              <div class="col-xs-o">
+    						<a href="#"><div class="imagen_boton"><%= image_tag "o.png", :alt => "Otras Actividades", :title => "Otras Actividades"%></div></a><!--imagen_boton-->
+    					</div><!--col-md-o-->
+              <!--Termina Boton Otras actividades Ambientales-->
+
+
+              <!--Inicia decoracion-->
+              <div class="col-xs-deco2">
+                <div class="imagen_boton"><%= image_tag "deco_menu.png" %>
+                </div><!--imagen-->
+              </div><!--decoracion-->
+
+
+
+
+              <!--Inicia Boton alertas-->
+              <div class="col-xs-al">
+                <a href="#"><div class="imagen_boton"><%= image_tag "alerta.png", :alt => "Alertas", :title => "Alertas"%></div></a><!--imagen_boton-->
+                 <kbd>40</kbd>
+              </div><!--col-md-o-->
+              <!-- Termina Boton alertas-->
+
+
+
+
+              <!--Inicia Boton informe-->
+              <div class="col-xs-ci">
+                <a href="#"><div class="imagen_boton"><%= image_tag "informe.png", :alt => "Consultas e Informes", :title => "Consultas e Informes"%></div></a><!--imagen_boton-->
+              </div><!--col-md-o-->
+              <!-- Termina Boton informe-->
+
+
+              
+
+
+
+
+              <!--Inicia Boton salir-->
+               <div class="col-xs-s">
                 <div class="imagen_boton">
 
-                  <%= link_to image_tag( "s.png", :alt => "e", :title => "e" ) %>
+                  <%= link_to image_tag( "s.png", :alt => "Salir", :title => "Salir" ) %>
                   <%= link_to "salir", destroy_user_session_path, method: :delete %>
                   </div><!--imagen_boton-->
               </div><!--col-md-s-->
-              
               <!-- Termina Boton salir-->
-              
-              <div class="col-md-c">
-                <a href="#" ><div class="imagen_boton"><%= image_tag "c.png", :alt => "e", :title => "e"%></div></a><!--imagen_boton-->
+
+
+            <!--Inicia Boton configuracion-->  
+              <div class="col-xs-c">
+                <a href="#" ><div class="imagen_boton"><%= image_tag "c.png", :alt => "Configuración", :title => "Configuración"%></div></a><!--imagen_boton-->
               </div><!--col-md-c-->
+              <!--Termina Boton configuracion-->  
 
 
-              <div class="col-md-u">
+             <!--Inicia decoracion-->
+              <div class="col-xs-er">
+                <div class="imagen_boton"><%= image_tag "deco_menu.png" %>
+                </div><!--imagen-->
+              </div><!--decoracion-->
+
+              <div class="col-xs-u">
                 <%= current_user.email %></br>
                 Rol: Invitado</br>
                 Sede: Medellín</br>
-              </div><!--col-md-c-->
+              </div><!--col-md-u-->
 
                  <!-- <% if user_signed_in? %>
                  <strong><%= current_user.email %></strong>.
                  <%= link_to "logout", destroy_user_session_path, method: :delete, :class=> 'navbar-link' %>
                   <% end %>-->
     
+
+          </div> <!--class="col-xs-20 col-md-12"-->
+          </div> <!--class: row-->
+
 
 				</div><!--barra-menu-->
 			</div>
