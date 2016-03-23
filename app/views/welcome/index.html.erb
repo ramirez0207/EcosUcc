@@ -94,7 +94,7 @@
               <!--Inicia Boton alertas-->
               <div class="col-xs-al">
                 <a href="#"><div class="imagen_boton"><%= image_tag "alerta.png", :alt => "Alertas", :title => "Alertas"%></div></a><!--imagen_boton-->
-                 <kbd>40</kbd>
+                 <div class="alerta-kbd"><kbd>40</kbd></div>
               </div><!--col-md-o-->
               <!-- Termina Boton alertas-->
 
@@ -116,10 +116,8 @@
               <!--Inicia Boton salir-->
                <div class="col-xs-s">
                 <div class="imagen_boton">
-
-                  <%= link_to image_tag( "s.png", :alt => "Salir", :title => "Salir" ) %>
-                  <%= link_to "salir", destroy_user_session_path, method: :delete %>
-                  </div><!--imagen_boton-->
+                  <%= link_to image_tag("s.png", :alt => "Salir", :title => "Salir"), destroy_user_session_path, method: :delete %>
+                  </div>
               </div><!--col-md-s-->
               <!-- Termina Boton salir-->
 
@@ -137,18 +135,15 @@
                 </div><!--imagen-->
               </div><!--decoracion-->
 
+
+
+              <!--INFORMACION DEL USUARIO-->
               <div class="col-xs-u">
                 <%= current_user.email %></br>
-                Rol: Invitado</br>
                 Sede: Medellín</br>
               </div><!--col-md-u-->
 
-                 <!-- <% if user_signed_in? %>
-                 <strong><%= current_user.email %></strong>.
-                 <%= link_to "logout", destroy_user_session_path, method: :delete, :class=> 'navbar-link' %>
-                  <% end %>-->
-    
-
+               
           </div> <!--class="col-xs-20 col-md-12"-->
           </div> <!--class: row-->
 
@@ -156,4 +151,25 @@
 				</div><!--barra-menu-->
 			</div>
 	</div><!--navbar navbar-default navbar-fixed-top-->
+
+
+
+<!--BARRAS VERTICALES IZQUIERDAS-->
+<div class="programa">
+    <ul>
+      <li><a href="#" class="icono-programa1"><div class="imagen_huella"><%= image_tag "huellae.png", :alt => "Reduce tu huella ecológica", :title => "Reduce tu huella ecológica"%></div></a></li>
+
+      <li><a href="#" class="icono-programa2"><div class="imagen_huella"><%= image_tag "huellah.png", :alt => "Reduce tu huella hídrica", :title => "Reduce tu huella hídrica"%></div></a></li>
+
+
+      <li><a href="#" class="icono-programa3"><div class="imagen_huella"><%= image_tag "huellac.png", :alt => "Reduce tu huella de carbono", :title => "Reduce tu huella de carbono"%></div></a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
 <% end %>
