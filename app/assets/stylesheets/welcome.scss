@@ -4,6 +4,10 @@
 
 
 
+
+
+/*---------------INICIA BARRA DE MENU PRINCIPAL ECOS ----------------------------*/
+
 /*# reglas Ecos */
 
 .imagen_boton img {
@@ -216,7 +220,7 @@ background-color: #0FB2BC;
 }
 
 .col-xs-h {
-background-color: #B2C740;
+
 }
 
 .col-xs-b {
@@ -330,15 +334,30 @@ background-color: #D61F26;
 
 
 
-/*POSICION RELATIVA DE LA ETIQUETA KBD DEL BOTON ALERTAS*/
+/*POSICION RELATIVA DE LA ETIQUETA NUMEROS BOTON ALERTAS*/
 .alerta-kbd {
   position: relative;
   top: -11px;
-  left: 23px;
-  color: #FF0000;
+  left: 25px;
+  color: #FFFFFF;
+  background: #FF0000;
+  width: 15px;
+  height: 13px;
+  border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 0px solid #FFFFFF;
 }
 
+.texto-kbd {
+  position: relative;
+  top: -3px;
+  color: #FFFFFF;
+  font-size: 11px;
+  text-align: center;
 
+  top: 0px;
+}
 
 
 
@@ -347,7 +366,7 @@ background-color: #D61F26;
 .programa {
   position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
   left: -40px; /* Establecemos la barra en la izquierda */
-  top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+  top: 180px; /* Bajamos la barra 200px de arriba a abajo */
   z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
  
@@ -387,3 +406,145 @@ background-color: #D61F26;
    left: 0px; 
    top: 0px;
   }
+
+  /*---------------TERMINA BARRA DE MENU PRINCIPAL ECOS ----------------------------*/
+
+
+
+ .barra-color{
+  position: relative;
+  top: 53px;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 7px;
+    width: auto; 
+    max-height: 14px;
+    border: 0px solid #FFFFFF;
+    background-color: #FFD41D;
+    border-color: #24C0D6;
+}
+
+
+
+
+
+
+
+
+/*---------------INICIO MENU CADA PROGRAMA ----------------------------*/
+
+.col-xs-titulo {
+    float: left;
+    width: auto;
+    height: auto;
+    vertical-align: bottom;
+    border: 0px solid #000000;
+    padding:0px;
+   
+}
+
+.col-xs-menu {
+    float:left;
+    width: auto;
+    height: 45px;
+    border: 0px solid #000000;
+    margin: 0px;
+    padding: 4px;
+    padding-right: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: Solid;
+    border-bottom-color: #C3C3C3;
+    border-top-width: 1px;
+    border-top-style: Solid;
+    border-top-color: #C3C3C3;
+    
+ }
+
+.col-xs-menu0 {
+    float:left;
+    width: auto;
+    height: 45px;
+    border: 0px solid #000000;
+    margin: 0px;
+    padding: 0px;
+    top: -5px;
+    padding-right: 10px; 
+    border-bottom-width: 1px;
+    border-bottom-style: Solid;
+    border-bottom-color: #C3C3C3;
+    border-top-width: 1px;
+    border-top-style: Solid;
+    border-top-color: #C3C3C3;
+}
+
+
+.col-xs-menu2 {
+    float:left;
+    border: 0px solid #000000;
+    height: 45px;
+    width: 200px;
+    vertical-align: middle;
+    padding: 4px;
+    border-bottom-width: 1px;
+    border-bottom-style: Solid;
+    border-bottom-color: #C3C3C3;
+    border-top-width: 1px;
+    border-top-style: Solid;
+    border-top-color: #C3C3C3;
+}
+
+.col-xs-menu1 {
+    float:left;
+    border: 0px solid #000000;
+    height: 45px;
+    width: 20px;
+    padding: 4px;
+    border-bottom-width: 1px;
+    border-bottom-style: Solid;
+    border-bottom-color: #C3C3C3;
+    border-top-width: 1px;
+    border-top-style: Solid;
+    border-top-color: #C3C3C3;
+
+}
+
+.col-xs-blanco {
+    float:left;
+    border: 0px solid #000000;
+    height: 30px;
+    width: 90px;
+}
+
+.col-xs-blanco1 {
+    float:left;
+    border: 0px solid #000000;
+    height: 500px;
+    width: 90px;
+}
+
+
+.imagen_boton2 img {
+   position: relative;
+   width: auto;
+   height: 30px;
+   border: 0px;
+   left: 0px; 
+   top: 0px;
+  }
+
+
+/*----ICONO ZONAS VERDES -----*/
+.col-xs-zonav {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #B2C740;
+    margin: 3px;
+    padding: 0px;
+}
+
+
+
+
+/*---------------FINALIZA MENU CADA PROGRAMA ----------------------------*/
