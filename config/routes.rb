@@ -1,4 +1,26 @@
 Rails.application.routes.draw do
+  get 'lineas/institucional'
+
+  get 'lineas/zonasv'
+
+  get 'lineas/energia'
+
+  get 'lineas/agua'
+
+  get 'lineas/reciclaje'
+
+  get 'lineas/comprasv'
+
+  get 'lineas/otras'
+
+  get 'configuracion/index'
+
+  post 'configuracion/usuarios'
+
+  post 'users/sign_up'
+
+  post 'users/password/edit'
+
   devise_for :users
 
 

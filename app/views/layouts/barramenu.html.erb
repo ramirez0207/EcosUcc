@@ -45,40 +45,41 @@
 
 					              <!--inicia boton institucional-->
 					              <div class="col-xs-i">
-					                <a href="#"><div class="imagen_boton"><%= image_tag "i.png", :alt => "Institucional", :title => "Institucional"%></div></a><!--imagen_boton-->
+					                <div class="imagen_boton"><%= link_to image_tag("i.png", :alt => "Institucional", :title => "Institucional"), lineas_institucional_path %></div>
 					              </div><!--col-md-i-->
 					              <!--termina boton institucional-->
 					    					
 
 					              <!--inicia boton zonas verdes-->
 					              <div class="col-xs-h">
-					    						<a href="#"><div class="imagen_boton"><%= image_tag "h.png", :alt => "Zonas Verdes", :title => "Zonas verdes"%></div></a><!--imagen_boton-->
+					    				<div class="imagen_boton"><%= link_to image_tag("h.png", :alt => "Zonas Verdes", :title => "Zonas Verdes"), lineas_zonasv_path %></div>
 												</div><!--col-md-h-->
 					    					<!--termina boton zonas verdes-->
 
 					              <!--inicia boton energia-->
 					              <div class="col-xs-b">
-					                <a href="#"><div class="imagen_boton"><%= image_tag "b.png", :alt => "Energía", :title => "Energía"%></div></a><!--imagen_boton-->
+					                <div class="imagen_boton"><%= link_to image_tag("b.png", :alt => "Energ&iacutea", :title => "Energ&iacutea"), lineas_energia_path %></div>
 					    					</div><!--col-md-b-->
 					    					<!--tremina boton energia-->
 
 					              <!--inicia boton Agua-->
 					              <div class="col-xs-a">
-					    						<a href="#"><div class="imagen_boton"><%= image_tag "a.png", :alt => "Agua", :title => "Agua"%></div></a><!--imagen_boton-->
-					    					</div>
+					    				<div class="imagen_boton"><%= link_to image_tag("a.png", :alt => "Agua", :title => "Agua"), lineas_agua_path %></div>
+					    			</div>
 					              <!--Termina boton Agua-->
 
 
 					              <!--inicia boton reciclaje-->
 					    					<div class="col-xs-r">
-					    						<a href="#"><div class="imagen_boton"><%= image_tag "r.png", :alt => "Reciclaje", :title => "Reciclaje"%></div></a><!--imagen_boton-->
+					    						<div class="imagen_boton"><%= link_to image_tag("r.png", :alt => "Reciclaje", :title => "Reciclaje"), lineas_reciclaje_path %></div>
 					                </div>
 					              <!--termina boton reciclaje-->
 
 
 					              <!--Inicia Boton compras-->
 					              <div class="col-xs-co">
-					                <a href="#"><div class="imagen_boton"><%= image_tag "compras.png", :alt => "compras verdes", :title => "compras verdes"%></div></a><!--imagen_boton-->
+					                <div class="imagen_boton"><div class="imagen_boton"><%= link_to image_tag("compras.png", :alt => "Compras Verdes", :title => "Compras Verdes"), lineas_comprasv_path %></div>
+					                </div>
 					              </div><!--col-md-o-->
 					              <!-- Termina Boton compras-->
 
@@ -89,7 +90,7 @@
 					    					
 					              <!--Inicia Boton Otras actividades Ambientales-->
 					              <div class="col-xs-o">
-					    						<a href="#"><div class="imagen_boton"><%= image_tag "o.png", :alt => "Otras Actividades", :title => "Otras Actividades"%></div></a><!--imagen_boton-->
+					    						<div class="imagen_boton"><%= link_to image_tag("o.png", :alt => "Otras Actividades", :title => "Otras Actividades"), lineas_otras_path %></div>
 					    					</div><!--col-md-o-->
 					              <!--Termina Boton Otras actividades Ambientales-->
 
@@ -105,7 +106,8 @@
 
 					              <!--Inicia Boton alertas-->
 					              <div class="col-xs-al">
-					                <a href="#"><div class="imagen_boton"><%= image_tag "alerta.png", :alt => "Alertas", :title => "Alertas"%></div></a><!--imagen_boton-->
+					                <div class="imagen_boton">
+					                	<%= link_to image_tag("alerta.png", :alt => "Alertas", :title => "Alertas"), root_path %></div><!--imagen_boton-->
 					                 <div class="alerta-kbd"><div class="texto-kbd">9</div></div>
 					              </div><!--col-md-o-->
 					              <!-- Termina Boton alertas-->
@@ -136,7 +138,8 @@
 
 					            <!--Inicia Boton configuracion-->  
 					              <div class="col-xs-c">
-					                <a href="#" ><div class="imagen_boton"><%= image_tag "c.png", :alt => "Configuración", :title => "Configuración"%></div></a><!--imagen_boton-->
+					                <div class="imagen_boton">
+					                	<%= link_to image_tag("c.png", :alt => "Configuración", :title => "Configuración"), configuracion_index_path %></div><!--imagen_boton-->
 					              </div><!--col-md-c-->
 					              <!--Termina Boton configuracion-->  
 

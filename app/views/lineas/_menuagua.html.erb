@@ -1,0 +1,44 @@
+<% if user_signed_in? %>
+
+ 
+        <div class="row">
+
+              <div class="col-xs-blanco">
+              </div>
+
+              <div class="col-xs-agua">
+                <div class="imagen_boton2">
+                <%= image_tag "a.png", :alt => "Agua", :title => "Agua"%>  
+                </div>      
+              </div>
+              <div class="col-xs-titulo">
+              <h4><strong> Ahorro y uso eficiente del Agua</strong></h4>
+              </div>
+              
+              <!-- Espacio entre el titulo y primer boton -->
+              <div class="col-xs-espacio">
+              </div>
+              
+                           
+              <div class="col-xs-1">
+                <button type="button" class="btn btn-default">Actualizar</button> 
+              </div>
+        </div>
+
+             
+              <ul class="nav nav-tabs">
+              </ul>
+
+            
+
+    
+    </header>
+
+
+  <p class='notice'><%= notice %></p>
+  <p class='alert'><%= alert %></p>
+
+  <%= yield %>
+
+
+    <% end %> 

@@ -1,0 +1,47 @@
+<% if user_signed_in? %>
+
+ 
+        <div class="row">
+
+              <div class="col-xs-blanco">
+              </div>
+
+              <div class="col-xs-alertas">
+                <div class="imagen_boton2">
+                <%= image_tag "alerta.png", :alt => "Alertas", :title => "Alertas"%>  
+                </div>
+
+              </div>
+              <div class="col-xs-titulo">
+              <h4><strong> Alertas</strong></h4>
+              </div>
+              
+              <!-- Espacio entre el titulo y primer boton -->
+              <div class="col-xs-espacio">
+              </div>
+              <div class="col-xs-espacio">
+              </div>
+              
+                           
+              <div class="col-xs-1">
+                <button type="button" class="btn btn-default">+</button> 
+              </div>
+        
+              <div class=".col-xs-standar">
+              <h5> <strong>Tiene 9 Alertas activas y pendientes por gestionar:</strong> 2 vencidas y 7 por vencer.</h5>
+              </div>
+       </div>
+
+              <ul class="nav nav-tabs">
+              </ul>
+
+            
+
+    
+    </header>
+
+
+  <%= yield %>
+
+
+    <% end %> 

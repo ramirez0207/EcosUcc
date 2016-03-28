@@ -440,7 +440,7 @@ border: 0px solid #FFFFFF;
     vertical-align: bottom;
     border: 0px solid #000000;
     padding:0px;
-   
+
 }
 
 .col-xs-menu {
@@ -508,6 +508,7 @@ border: 0px solid #FFFFFF;
 
 }
 
+/*---ESPACIO EN BLANCO ENTRE EL BORDE IZQUIERDO AL INICIO DEL ICONO----*/
 .col-xs-blanco {
     float:left;
     border: 0px solid #000000;
@@ -515,10 +516,11 @@ border: 0px solid #FFFFFF;
     width: 90px;
 }
 
+/*---ESPACIO EN BLANCO ENTRE EL BORDE IZQUIERDO AL INICIO DEL CONTENIDO PAGINA----*/
 .col-xs-blanco1 {
     float:left;
     border: 0px solid #000000;
-    height: 500px;
+    height: 440px;
     width: 90px;
 }
 
@@ -533,8 +535,66 @@ border: 0px solid #FFFFFF;
   }
 
 
-/*----ICONO ZONAS VERDES -----*/
-.col-xs-zonav {
+
+.col-xs-espacio {
+    float:left;
+    border: 0px solid #000000;
+    height: 30px;
+    width: 30px;
+}
+
+/*--- CELDA SIN TAMAÑO --*/
+.col-xs-standar {
+    float:left;
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+       
+ }
+
+ /*--- CELDA SIN TAMAÑO CONTENIDO VISTAS--*/
+.col-xs-contenido {
+    position: relative;
+    top: -40px;
+    left: 90px; 
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+}
+
+.col-xs-tabla{
+float:left;
+width: auto;
+height: auto;
+padding-top: 15px;
+}
+
+
+/*---------------FINALIZA MENU CADA PROGRAMA ----------------------------*/
+
+
+
+
+
+/*----------------- INICIA ICONOS LINEAS AMBIENTALES -------------------*/
+
+
+
+/*--ICONO INSTITUCIONAL ---*/
+
+.col-xs-institucional {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #0FB2BC;
+    margin: 3px;
+    padding: 0px;
+}
+
+/*--ICONO ZONAS VERDES ---*/
+
+.col-xs-zonasv {
     float:left;
     width: 30px;
     height: 30px;
@@ -544,7 +604,111 @@ border: 0px solid #FFFFFF;
     padding: 0px;
 }
 
+/*--ICONO AGUA ---*/
+
+.col-xs-agua {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #50B3E5;
+    margin: 3px;
+    padding: 0px;
+}
+
+
+/*--ICONO ENERGIA ---*/
+
+.col-xs-energia {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #F4E830;
+    margin: 3px;
+    padding: 0px;
+}
+
+
+/*--ICONO RECICLAJE ---*/
+
+.col-xs-reciclaje {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #E68638;
+    margin: 3px;
+    padding: 0px;
+}
 
 
 
-/*---------------FINALIZA MENU CADA PROGRAMA ----------------------------*/
+
+
+/*--ICONO COMPRAS VERDES ---*/
+
+.col-xs-comprasv {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #00B906;
+    margin: 3px;
+    padding: 0px;
+}
+
+
+/*--ICONO OTRAS ACTIVIDADES---*/
+
+.col-xs-otras {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #8F994E;
+    margin: 3px;
+    padding: 0px;
+}
+
+/*--ICONO ALERTAS---*/
+
+.col-xs-alertas {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #FFCC00;
+    margin: 3px;
+    padding: 0px;
+}
+
+
+/*--ICONO CONFIGURACION ---*/
+
+.col-xs-conf {
+    float:left;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #FFFFFF;
+    background-color: #0FB2BC;
+    margin: 3px;
+    padding: 0px;
+}
+
+
+/*----------------- FINALIZA ICONOS LINEAS AMBIENTALES -------------------*/
+
+/*----------------- INICIA TITULOS MENUS -------------------*/
+
+.titulo-menu{
+  font-size: 18px;
+}
+
+
+/*----------------- FINALIZA TITULOS MENUS -------------------*/
+
+.row{
+
+  border: 0px solid #000000;
+}

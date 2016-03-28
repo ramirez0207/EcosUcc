@@ -1,0 +1,78 @@
+
+
+<%= render :partial => "configuracion/menuconfiguracion" %>
+
+<div class="col-xs-contenido">
+
+<div class="titulo-menu"><strong> >>> USUARIOS <<< </strong></div>
+<div class="row">
+      
+
+        <div class="col-xs-menu">
+          <%= button_to 'Crear', new_user_registration_path(resource_name), :class => 'btn btn-default'  %> 
+        </div>
+
+        <div class="col-xs-menu1">
+        </div>
+
+        <div class="col-xs-menu">
+          <strong>Filtro:</strong>
+        </div>
+
+        <div class="col-xs-menu0">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Activos
+            </label>
+          </br>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Inactivos
+          </label>
+        </div>
+
+      
+        <div class="col-xs-menu2">
+        <select class="form-control" >...</select>
+        </div>
+      
+
+
+        <div class="col-xs-menu2">
+        <input type="search" class="form-control" placeholder="Buscar">
+        </div>
+
+        <div class="col-xs-menu1">
+        </div>
+
+        <div class="col-xs-menu">
+        <button type="button" class="btn btn-default">Descargar</button>
+        </div>
+</div>
+
+
+<div class="col-xs-tabla">
+<table class="table table-hover">
+  <tr>
+
+  		<td> <strong> Usuario </strong></td>
+  		<td> <strong>Fecha de creacion </strong></td>
+  		<td> <strong>Ultima Fecha Ingreso </strong></td>
+  		<td> <strong>Sede </strong></td>
+  		<td> <strong> Rol </strong></td>
+  		<td> </td>
+  </tr>
+  <% User.all.each do |usuario| %>
+  <tr>
+  		<td><%= usuario.email %></td>
+  		<td><%= usuario.created_at %> </td>
+  		<td><%= usuario.last_sign_in_at %> </td>
+  		<td> Institucional </td>
+  		<td> Administrador </td>
+  		<td><%= button_to 'Editar', edit_user_registration_path(usuario), method: :edit, :class => 'btn btn-primary btn-xs'  %> </td>
+  </tr>
+
+<% end %>
+
+</table>
+</div>
+
+</div><!--CONTENIDO-->
