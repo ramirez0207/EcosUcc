@@ -17,11 +17,17 @@ Rails.application.routes.draw do
 
   post 'configuracion/usuarios'
 
+  post 'configuracion/sedes'
+
   post 'users/sign_up'
 
   post 'users/password/edit'
 
   devise_for :users
+
+  resources :users
+
+  resources :questions
 
 
     # The priority is based upon order of creation: first created -> highest priority.

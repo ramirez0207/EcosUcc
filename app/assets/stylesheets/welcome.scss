@@ -457,6 +457,7 @@ border: 0px solid #FFFFFF;
     border-top-width: 1px;
     border-top-style: Solid;
     border-top-color: #C3C3C3;
+    background-color:#EFEFEF;
     
  }
 
@@ -475,6 +476,7 @@ border: 0px solid #FFFFFF;
     border-top-width: 1px;
     border-top-style: Solid;
     border-top-color: #C3C3C3;
+    background-color:#EFEFEF;
 }
 
 
@@ -491,6 +493,7 @@ border: 0px solid #FFFFFF;
     border-top-width: 1px;
     border-top-style: Solid;
     border-top-color: #C3C3C3;
+    background-color:#EFEFEF;
 }
 
 .col-xs-menu1 {
@@ -505,6 +508,7 @@ border: 0px solid #FFFFFF;
     border-top-width: 1px;
     border-top-style: Solid;
     border-top-color: #C3C3C3;
+    background-color:#EFEFEF;
 
 }
 
@@ -543,13 +547,31 @@ border: 0px solid #FFFFFF;
     width: 30px;
 }
 
-/*--- CELDA SIN TAMAÑO --*/
+/*--- CELDA SIN TAMAÑO SIN PADING ARRIBA--*/
 .col-xs-standar {
     float:left;
     width: auto;
     height: auto;
     padding-right: 10px;
-       
+    padding-top: 0px;
+    border: 0px solid #000000;
+}
+
+ .col-xs-standar2 {
+    float:left;
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 0px solid #000000;       
+ }
+
+.col-xs-absolute {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 80px;
+    left: 0;       
  }
 
  /*--- CELDA SIN TAMAÑO CONTENIDO VISTAS--*/
@@ -557,9 +579,18 @@ border: 0px solid #FFFFFF;
     position: relative;
     top: -40px;
     left: 90px; 
+    border: 0px solid #000000;
     width: auto;
     height: auto;
     padding-right: 10px;
+}
+
+.col-xs-submenu{
+position: left;
+width: auto;
+height: auto;
+left: 15px;
+ padding-bottom: 10px; 
 }
 
 .col-xs-tabla{
@@ -568,6 +599,22 @@ width: auto;
 height: auto;
 padding-top: 15px;
 }
+
+.col-xs-recuadro{
+float: left;
+color: #000000;
+border-bottom-color: #B2C740;
+border-bottom-width: 10px;
+border-bottom-style: Solid;
+  width: 700px;
+  height: 250px;
+  border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 1px solid #CECECE;
+padding-bottom: 15px;
+}
+
 
 
 /*---------------FINALIZA MENU CADA PROGRAMA ----------------------------*/
@@ -703,6 +750,7 @@ padding-top: 15px;
 
 .titulo-menu{
   font-size: 18px;
+
 }
 
 
@@ -711,4 +759,15 @@ padding-top: 15px;
 .row{
 
   border: 0px solid #000000;
+  width: auto;
+  height: auto;
 }
+
+.col-xs-standar3 {
+    float:left;
+    width: 700px;
+    height: 45px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 0px solid #000000;       
+ }
