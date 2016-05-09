@@ -176,6 +176,7 @@
     
   }
   
+   /*# recuadro configuración */
   .col-xs-c {
     float:right;
     width: 40px;
@@ -212,60 +213,11 @@
 
 
 
-/* COLORES DE LOS BOTONES*/
-
-/*
-.col-xs-i {
-background-color: #0FB2BC;
-}
-
-.col-xs-h {
-
-}
-
-.col-xs-b {
-background-color: #F4E830;
-}
-
-.col-xs-a {
-background-color: #50B3E5;
-}
-
-.col-xs-r {
-background-color: #E68638;
-}
-
-.col-xs-co {
-background-color: #46B648;
-}
-
-.col-xs-o {
-background-color: #8F994E;
-}
-
-.col-xs-al {
-background-color: #FFD41D;
-}
-
-.col-xs-ci {
-background-color: #C4B265;
-} 
-
-.col-xs-c {
- background-color: #0FB2BC;
-}
-
-.col-xs-s {
-background-color: #D61F26;
-}
-
-*/
-
-
 
 
 
 /* COLORES E IMAGENES INSTITUCIONALES DEL CLIENTE*/
+
    .col-xs-i:hover,
    .col-xs-h:hover,
    .col-xs-b:hover,
@@ -330,11 +282,15 @@ background-color: #D61F26;
 }
 
 
+/* ---------------------------FIN MENU PRINCIPAL ----------------------------*/
 
 
 
 
-/*POSICION RELATIVA DE LA ETIQUETA NUMEROS BOTON ALERTAS*/
+
+/*------------POSICION RELATIVA DE LA ETIQUETA NUMEROS BOTON ALERTAS--------*/
+
+
 .alerta-kbd {
   position: relative;
   top: -11px;
@@ -359,10 +315,15 @@ border: 0px solid #FFFFFF;
   top: 0px;
 }
 
+/*------------FIN POSICION RELATIVA DE LA ETIQUETA NUMEROS BOTON ALERTAS--------*/
 
 
 
-/* BARRAS VERTICALES IZQUIERDAS*/
+
+
+/*--------------------- BARRAS VERTICALES IZQUIERDAS PROGRAMAS REDUCE TU HUELLA -----------------------------*/
+
+
 .programa {
   position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
   left: -40px; /* Establecemos la barra en la izquierda */
@@ -407,41 +368,38 @@ border: 0px solid #FFFFFF;
    top: 0px;
   }
 
-  /*---------------TERMINA BARRA DE MENU PRINCIPAL ECOS ----------------------------*/
+  /*---------------TERMINA VERTICALES IZQUIERDAS PROGRAMAS REDUCE TU HUELLA ----------------------------*/
 
 
 
- .barra-color{
-  position: relative;
-  top: 53px;
-    margin-right: 0px;
-    margin-left: 0px;
-    height: 7px;
-    width: auto; 
-    max-height: 14px;
-    border: 0px solid #FFFFFF;
-    background-color: #FFD41D;
-    border-color: #24C0D6;
-}
-
-
-
-
+ 
 
 
 
 
 /*---------------INICIO MENU CADA PROGRAMA ----------------------------*/
 
-.col-xs-titulo {
+
+.col-xs-blanco { /*---Espacio en blanco entre el borde izquierdo al inicio del icono----*/
+    float:left;
+    border: 1px solid #FFFFFF;
+    height: auto;
+    width: 90px;
+}
+
+
+.col-xs-titulo { /*---titulo programa----*/
     float: left;
     width: auto;
     height: auto;
     vertical-align: bottom;
     border: 0px solid #000000;
     padding:0px;
-
 }
+
+
+
+
 
 .col-xs-menu {
     float:left;
@@ -512,13 +470,26 @@ border: 0px solid #FFFFFF;
 
 }
 
-/*---ESPACIO EN BLANCO ENTRE EL BORDE IZQUIERDO AL INICIO DEL ICONO----*/
-.col-xs-blanco {
-    float:left;
-    border: 0px solid #000000;
-    height: 30px;
-    width: 90px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*---ESPACIO EN BLANCO ENTRE EL BORDE IZQUIERDO AL INICIO DEL CONTENIDO PAGINA----*/
 .col-xs-blanco1 {
@@ -533,7 +504,7 @@ border: 0px solid #FFFFFF;
    position: relative;
    width: auto;
    height: 30px;
-   border: 0px;
+   border: 0px solid #000000;
    left: 0px; 
    top: 0px;
   }
@@ -555,6 +526,7 @@ border: 0px solid #FFFFFF;
     padding-right: 10px;
     padding-top: 0px;
     border: 0px solid #000000;
+    top: 0px;
 }
 
  .col-xs-standar2 {
@@ -577,7 +549,7 @@ border: 0px solid #FFFFFF;
  /*--- CELDA SIN TAMAÑO CONTENIDO VISTAS--*/
 .col-xs-contenido {
     position: relative;
-    top: -40px;
+    top: -63px;
     left: 90px; 
     border: 0px solid #000000;
     width: auto;
@@ -690,9 +662,6 @@ padding-bottom: 15px;
 }
 
 
-
-
-
 /*--ICONO COMPRAS VERDES ---*/
 
 .col-xs-comprasv {
@@ -737,7 +706,7 @@ padding-bottom: 15px;
     float:left;
     width: 30px;
     height: 30px;
-    border: 0px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     background-color: #0FB2BC;
     margin: 3px;
     padding: 0px;
@@ -771,3 +740,65 @@ padding-bottom: 15px;
     padding-top: 10px;
     border: 0px solid #000000;       
  }
+
+ .submenu-fixed {
+    float:left;
+    width: 100%;
+    height: auto;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 0px solid #000000;       
+ }
+
+
+
+ .barra-color{
+  position: relative;
+  top: 53px;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 7px;
+    width: auto; 
+    max-height: 14px;
+    border: 0px solid #FFFFFF;
+    background-color: #FFD41D;
+    border-color: #24C0D6;
+}
+
+
+
+
+hr { 
+  background-color: black;
+  height: 10px;
+  width: 50%;
+}
+
+
+
+
+
+/* ---------------------- RECUADROS ALERTAS --------------------*/
+
+
+.bs-callout {
+    padding: 5px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-zonasv {
+    border-left-color: #09343F;
+    width: 100%;
+}
+
+.col-xs-alerts{
+  float:left;
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    border: 0px solid #000000;
+    top: 0px;
+}

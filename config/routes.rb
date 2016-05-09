@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'lineas/institucional'
 
   get 'lineas/zonasv'
@@ -23,11 +24,26 @@ Rails.application.routes.draw do
 
   post 'users/password/edit'
 
+
+# Alias
+
+  get 'alertas' => 'welcome#index', as: 'alertas'
+
+
   devise_for :users
 
   resources :users
 
-  resources :questions
+ #authenticated :user do
+  #    root 'welcome#index'
+  #end
+
+  #unauthenticated :user do
+   # devise_scope :user do
+    #  root 'users/sign_in'
+    #end
+  #end
+
 
 
     # The priority is based upon order of creation: first created -> highest priority.

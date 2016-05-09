@@ -1,0 +1,44 @@
+<% if user_signed_in? %>
+
+<div class="col-xs-standar">
+
+  <div class="col-xs-blanco">
+  </div>
+
+    <div class="col-xs-standar">
+      <h4>Creación Nuevo Usuario</h4>
+
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="field">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %>
+          <% if @validatable %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Sign up" %>
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+      <% end %>
+
+      
+
+      <% end %>
+
+
+    </div>
+</div>
