@@ -41,9 +41,18 @@ gem 'coffee-script-source', '1.8.0'
 # Autenticacion DEVISE para rails 4
 gem 'devise', '~> 3.4.0'
 
+
+# Solucion error de ActionController::UnknownFormat
+gem 'responders', '~> 2.0'
+
+
+
 # Instalando Bootstrap para hojas de estilo
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails'
+
+# Archivos en Excel
+gem 'axlsx_rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

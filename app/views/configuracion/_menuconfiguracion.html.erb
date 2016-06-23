@@ -1,6 +1,8 @@
 <% if user_signed_in? %>
 
- 
+        <div class="col-xs-relleno">
+        <!-- Espacio relleno debajo menu principal -->
+        </div>
         <div class="col-xs-standar">
 
               <div class="col-xs-blanco">
@@ -21,7 +23,7 @@
                            
                 <div class="col-xs-standar">
                   
-                    <%= button_to 'Cambiar contraseña', edit_user_password_path(resource_name), method: :edit, :class => 'btn btn-default'  %>
+                    <%= button_to 'Cambiar contraseña', users_cambio_p_path(resource_name), method: :post, :class => 'btn btn-default' %>
                 </div>  
                   
                 
@@ -29,7 +31,7 @@
                   <%= button_to 'Usuarios', configuracion_usuarios_path(:id), method: :edit, :class => 'btn btn-default'  %>
                 </div>
                 <div class="col-xs-standar">
-                  <%= button_to 'Sedes', configuracion_sedes_path(:id), method: :edit, :class => 'btn btn-default'  %>
+                  <%= button_to 'Sedes', sedes_index_path, :class => 'btn btn-default'  %>
                 </div>
                 <div class="col-xs-standar">
                   <button type="button" class="btn btn-default">Bloques</button> 

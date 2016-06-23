@@ -1,0 +1,60 @@
+<% if user_signed_in? %>
+
+
+<div class="col-xs-contenido"></br></br></br>
+</div>
+<div class="col-xs-relleno">
+<!-- Espacio relleno debajo menu principal -->
+</div>
+  <div class="col-xs-contenido">
+  
+     <div class="col-xs-blanco">
+    </div>
+        <div class="row center-xs">
+
+            <div class="col-xs-6 col-md-4">
+
+                <%= form_for(@sede) do |f| %>
+                  <% if @sede.errors.any? %>
+                    <div id="error_explanation">
+                      <h2><%= pluralize(@sede.errors.count, "error") %> prohibited this sede from being saved:</h2>
+
+                      <ul>
+                      <% @sede.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                      <% end %>
+                      </ul>
+                    </div>
+                  <% end %>
+
+                  <h2>Crear Sede</h2>
+        <ul class="nav nav-tabs">
+              </ul>
+              </br></br>
+
+                  <div class="field">
+                    <%= f.label :sede_id %><br>
+                    <%= f.text_field :sede_id, class:"form-control" %>
+                  </div>
+                  <div class="field">
+                    <%= f.label :ciudad %><br>
+                    <%= f.text_field :ciudad, class:"form-control" %>
+                  </div>
+                  <div class="field">
+                    <%= f.label :departamento %><br>
+                    <%= f.text_field :departamento, class:"form-control" %>
+                  </div>
+                  <div class="actions">
+                    <%= f.submit 'Aceptar', class: 'btn btn-default' %>
+                  </div>
+
+                <% end %>
+                
+</div>
+</div>
+</div>
+
+
+
+
+<% end %>

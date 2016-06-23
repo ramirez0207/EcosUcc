@@ -1,0 +1,6 @@
+wb = xlsx_package.libro
+wb.add_worksheet (name : "Users") do |sheet| 
+  @products.each do |user| 
+    sheet.add_row [users.email, users.created_at] 
+  end 
+end

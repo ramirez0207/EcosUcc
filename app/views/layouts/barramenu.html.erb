@@ -69,6 +69,10 @@
 					              <!--Termina boton Agua-->
 
 
+
+
+
+
 					              <!--inicia boton reciclaje-->
 					    					<div class="col-xs-r">
 					    						<div class="imagen_boton"><%= link_to image_tag("r.png", :alt => "Reciclaje", :title => "Reciclaje"), lineas_reciclaje_path %></div>
@@ -112,7 +116,7 @@
 					              </div><!--col-md-o-->
 					              <!-- Termina Boton alertas-->
 
-
+					              	
 
 
 					              <!--Inicia Boton informe-->
@@ -154,8 +158,9 @@
 
 					              <!--INFORMACION DEL USUARIO-->
 					              <div class="col-xs-u">
-					                <%= current_user.email %></br>
-					                Sede: Medellín</br>
+					              	Bienvenido, <%= current_user.nombres %></br>
+					                <%= current_user.email %>
+					                
 					              </div><!--col-md-u-->
 
 					               
@@ -195,8 +200,8 @@
 	</header>
 
 
-<p class='notice'><%= notice %></p>
-<p class='alert'><%= alert %></p>
+<!--<p class='notice'><%= notice %></p>
+<p class='alert'><%= alert %></p> -->
 
 <%= yield %>
 

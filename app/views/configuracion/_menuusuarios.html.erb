@@ -1,0 +1,58 @@
+<% if user_signed_in? %>
+
+<%= render :partial => "configuracion/menuconfiguracion" %>
+
+<div class="col-xs-contenido">
+
+
+<div class="col-xs-standar">
+<div class="col-xs-menu"> <div class="titulo-menu"><strong> USUARIOS: </strong></div>
+</div>
+<div class="col-xs-standar">
+      
+
+        <div class="col-xs-menu">
+          <%= button_to 'Crear', new_registration_path(resource_name), :class => 'btn btn-default'  %> 
+        </div>
+
+        <div class="col-xs-menu1">
+        </div>
+
+        <div class="col-xs-menu">
+          <strong>Filtro:</strong>
+        </div>
+
+        <div class="col-xs-menu0">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1" checked="checked"> Activos
+            </label>
+          </br>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Inactivos
+          </label>
+        </div>
+
+      
+        <div class="col-xs-menu2">
+            <select class="form-control" >
+              <option value="value1" selected>Todos los Usuarios</option> 
+              <option value="value2">Institucional</option>
+              <option value="value3">Medellin</option>
+            </select>
+        </div>
+      
+
+
+        <div class="col-xs-menu2">
+        <input type="search" class="form-control" placeholder="Buscar">
+        </div>
+
+        <div class="col-xs-menu1">
+        </div>
+
+        <div class="col-xs-menu">
+        <%= button_to 'Descargar', users_path(format: :xlsx), :class => 'btn btn-default'  %>
+        </div>
+
+</div> <!--CIERRE SUBMENU-->
+<% end %>

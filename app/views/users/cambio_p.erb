@@ -1,0 +1,46 @@
+<% if user_signed_in? %>
+
+        <div class="col-xs-relleno">
+        <!-- Espacio relleno debajo menu principal -->
+        </div>
+<div class="col-xs-contenido"></br></br></br>
+</div>
+
+  <div class="col-xs-contenido">
+  
+     <div class="col-xs-blanco">
+  </div>
+        <div class="row center-xs">
+
+            <div class="col-xs-6 col-md-4">
+        <h2>Cambie su contraseña</h2>
+        <ul class="nav nav-tabs">
+                      </ul>
+                      </br>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token -%> 
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+          <%= devise_error_messages! %>
+          <%= f.hidden_field :reset_password_token %>
+
+          <div class="field">
+            <%= f.label :password, "Nueva contraseña" %><br />
+            <%= f.password_field :password, autofocus: true, autocomplete: "off", class:"form-control" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password_confirmation, "Confirmar nueva contraseña" %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off", class:"form-control" %>
+          </div>
+              </br>
+          <div class="actions">
+            <%= f.submit 'Cambiar Contraseña', class: 'btn btn-default' %>
+            <!--<%= f.submit "Cambiar Contraseña" %>-->
+            <%= button_to 'Cancelar', sedes_path, :class => 'btn btn-default' %>
+          </div>
+        <% end %>
+        <% end %>
+
+        </div>
+        </div>
+
+  </div>

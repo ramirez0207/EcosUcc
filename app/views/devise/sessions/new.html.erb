@@ -1,27 +1,68 @@
-<h2>Ingreso</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email, "Correo Institucional" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "on", placeholder:"ejemplo@ucc.edu.co"%>
-  </div>
+<div class="row center-xs">
+  
+  <div class="col-xs-standar">
 
-  <div class="field">
-    <%= f.label :password, "Contraseña" %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <div class="imagen_ingreso"><%= image_tag "ucc_sesion.jpg", :alt => "Reduce tu Huella", :title => "Reduce tu Huella"%></div>
 
-  <!-- Casilla de recordar -->
-  <!--<% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+
+  </div> 
+  <div class="col-xs-1 col-md-1">
+   </div>  
+  <div class="col-xs-5 col-md-3">
+
+    <div class="box">
+      </br></br></br><div class="imagen_LogoEcos text-center"><%= image_tag "ECOS_Logo.png", :alt => "Ecos", :title => "Ecos"%></div></br></br></br> </br></br>
     </div>
-  <% end -%>-->
 
-  <div class="actions">
-    <%= f.submit "Ingresar" %>
+
+    <div class="box">
+        
+        <div class="titulo_ingreso"><h2>Ingreso</h2></div>
+        <ul class="nav nav-tabs">
+              </ul>
+              
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+        </br>
+          <%= f.label :email, "Correo Institucional" %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "on", placeholder:"ejemplo@ucc.edu.co", class:"form-control"%>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, "Contraseña" %><br />
+          <%= f.password_field :password, autocomplete: "off", class:"form-control"  %>
+        </div>
+
+        <!-- Casilla de recordar -->
+        <!--<% if devise_mapping.rememberable? -%>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end -%>-->
+
+        <div class="actions text-center">
+          <!-- <%= f.submit "Ingresar" %> -->
+          <%= button_to 'Ingresar', root_path, :class => 'btn btn-default' %>
+        </div>
+      <% end %>
+
+      <div class="text-center">
+      
+        <!-- Le quite el signo igual = -->
+
+     <% render "devise/shared/links" %> 
+      
+      </div>
+      
+      <ul class="nav nav-tabs">
+              </ul>
+
+
+    </div>
   </div>
-<% end %>
+</div>
 
-<%= render "devise/shared/links" %>
+
+

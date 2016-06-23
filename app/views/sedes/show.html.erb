@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sede:</strong>
+  <%= @sede.sede_id %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @sede.ciudad %>
+</p>
+
+<p>
+  <strong>Departamento:</strong>
+  <%= @sede.departamento %>
+</p>
+
+<%= link_to 'Edit', edit_sede_path(@sede) %> |
+<%= link_to 'Back', sedes_path %>

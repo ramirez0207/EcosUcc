@@ -1,0 +1,41 @@
+<% if user_signed_in? %>
+
+<%= render :partial => "configuracion/menusedes" %>
+
+<p id="notice"><%= notice %></p>
+
+<div class="col-xs-standar">
+ <div class="col-xs-blanco"></div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <td><strong>Sede</strong></td>
+          <td><strong>Ciudad</strong></td>
+          <td><strong>Departamento</strong></td>
+          <td><strong></strong></td>
+          <td><strong></strong></td>
+         
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @sedes.each do |sede| %>
+          <tr>
+            <td><%= sede.sede_id %></td>
+            <td><%= sede.ciudad %></td>
+            <td><%= sede.departamento %></td>
+            <td><%= button_to 'Mostrar', sede, :class => 'btn btn-primary btn-xs'%></td>
+            <td><%= button_to 'Editar', edit_sede_path(sede), method: :edit, :class => 'btn btn-primary btn-xs'%></td>
+            <!--<td><%= button_to 'Eliminar', sede, method: :delete, data: { confirm: 'Desea Eliminar esta Sede?' }, :class => 'btn btn-primary btn-xs' %></td>-->
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <!--<%= link_to 'New Sede', new_sede_path %>-->
+
+</div>
+
+<% end %>

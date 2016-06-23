@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  #authenticated do
+   # root :to => 'welcome#index'
+   # end
+
+  #root :to => 'devise/sessions#new'
+
+
+
+  resources :sedes
+
   get 'lineas/institucional'
 
   get 'lineas/zonasv'
@@ -22,10 +32,23 @@ Rails.application.routes.draw do
 
   post 'users/sign_up'
 
-  post 'users/password/edit'
+  post 'users/cambio_p'
+
+  post 'sedes/new'
+
+  post 'sedes/edit'
+
+  post 'sedes/index'
+
+  get 'sessions/new'
+
+  
 
 
-# Alias
+
+
+
+ # Alias
 
   get 'alertas' => 'welcome#index', as: 'alertas'
 
@@ -51,6 +74,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

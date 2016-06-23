@@ -2,15 +2,29 @@ class ConfiguracionController < ApplicationController
  
 layout 'barramenu'
 
+  
 
-  def index
-  end
+   def index
+    
+   end
 
-  def usuarios
+   def usuarios
+     #@users = User.order('created_at DESC')
+     #respond_to do |format|
+     #format.html
+     #format.xlsx {
+    #response.headers['Content-Disposition'] = 'attachment; filename="usuarios.xlsx"'
+    #}
+
+
+   end
+   def users
   end
 end
 
- def resource_name
+
+
+  def resource_name
     :user
   end
 
@@ -21,4 +35,4 @@ end
   def devise_mapping
     @devise_mapping ||= Devise.mappings[:user]
   end
-  
+#end

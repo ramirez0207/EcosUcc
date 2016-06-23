@@ -8,4 +8,7 @@ class UsersController < ApplicationController
 	def cambio_p
 	end
 
+	def password
+	end
+
 end

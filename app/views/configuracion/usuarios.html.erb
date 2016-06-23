@@ -1,60 +1,6 @@
 
 
-<%= render :partial => "configuracion/menuconfiguracion" %>
-
-<div class="col-xs-contenido">
-
-
-<div class="col-xs-standar">
-<div class="col-xs-menu"> <div class="titulo-menu"><strong> USUARIOS: </strong></div>
-</div>
-<div class="col-xs-standar">
-      
-
-        <div class="col-xs-menu">
-          <%= button_to 'Crear nuevo usuario', new_registration_path(resource_name), :class => 'btn btn-default'  %> 
-        </div>
-
-        <div class="col-xs-menu1">
-        </div>
-
-        <div class="col-xs-menu">
-          <strong>Filtro:</strong>
-        </div>
-
-        <div class="col-xs-menu0">
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1" checked="checked"> Activos
-            </label>
-          </br>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Inactivos
-          </label>
-        </div>
-
-      
-        <div class="col-xs-menu2">
-            <select class="form-control" >
-              <option value="value1" selected>Todas las Sedes</option> 
-              <option value="value2">Institucional</option>
-              <option value="value3">Medellin</option>
-            </select>
-        </div>
-      
-
-
-        <div class="col-xs-menu2">
-        <input type="search" class="form-control" placeholder="Buscar">
-        </div>
-
-        <div class="col-xs-menu1">
-        </div>
-
-        <div class="col-xs-menu">
-        <button type="button" class="btn btn-default">Descargar</button>
-        </div>
-
-</div> <!--CIERRE SUBMENU-->
+<%= render :partial => "configuracion/menuusuarios" %>
 
 <div class="col-xs-standar2">
 <table class="table table-hover">
@@ -73,7 +19,7 @@
   <% User.all.each do |usuario| %>
   <tr>
   		<td><%= usuario.email %></td>
-  		<td>Nestor Ramirez Amaya </td>
+  		<td><%= usuario.nombres + " " + usuario.apellidos %></td>
   		<td> Institucional </td>
       <td> Coord. Infraestructura Sedes </td>
   		<td> Administrador </td>

@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+
+
+		<!--<h1>Crear nueva sede</h1>-->
+
+		<%= render 'form' %>
+
+
+		 <!--<%= link_to 'Volver a Sedes', sedes_path %>--> 
+		<%= button_to 'Cancelar', sedes_index_path,  :class => 'btn btn-default' %>
+	<end>
+
+<% end %> 
